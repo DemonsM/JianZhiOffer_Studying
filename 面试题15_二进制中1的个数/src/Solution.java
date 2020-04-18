@@ -30,8 +30,18 @@
 //leetcode submit region begin(Prohibit modification and deletion)
 public class Solution {
     // you need to treat n as an unsigned value
-    public int hammingWeight(int n) {
+    /*public int hammingWeight(int n) {
         return Integer.bitCount(n);
+    }*/
+
+    /* 逐位判断 */
+    public int hammingWeight(int n) {
+        int res = 0;
+        while (n != 0) {
+            res += n & 1;
+            n >>>= 1;
+        }
+        return res;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
