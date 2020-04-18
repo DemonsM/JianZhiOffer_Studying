@@ -34,7 +34,9 @@ public class Solution {
         return Integer.bitCount(n);
     }*/
 
-    /* 逐位判断 */
+    /**
+     * 逐位判断
+     */
     public int hammingWeight(int n) {
         int res = 0;
         while (n != 0) {
