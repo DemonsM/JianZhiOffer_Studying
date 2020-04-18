@@ -31,7 +31,7 @@ class Solution {
     public int numWays(int n) {
         //起始数不同，斐波那契数列f0=0，f1=1，f2=2
         /*public int fib(int n) {
-            int a = 0, b = 1, sum;
+            int a = 0, b = 1, sum;面试题11. 旋转数组的最小数字
             for (int i = 0; i < n; i++) {
                 sum = (a + b) % 1000000007;
                 a = b;
